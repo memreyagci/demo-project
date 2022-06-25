@@ -50,7 +50,7 @@ public class Driver {
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    driver = new ChromeDriver(new ChromeOptions().setHeadless(false));
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
@@ -58,7 +58,7 @@ public class Driver {
                     break;
                 case "firefox-headless":
                     WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver(new FirefoxOptions().setHeadless(true));
+                    driver = new FirefoxDriver(new FirefoxOptions().setHeadless(false));
                     break;
 
                 case "ie":
